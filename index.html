@@ -1,122 +1,290 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-    <head>
-        <meta charset="=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-too-fit=no">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QI
-        VfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-        <title>First Practicum</title>
-    </head>
-    <body>
-        
-        
-        <div class="banner">
-            <div class="leftside">
-                <ul>
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-google"></i></li>
-                    <li><i class="fa fa-pinterest"></i></li>
-                    <li><i class="fa fa-snapchat-ghost"></i></li>
-                    <li><i class="fa fa-reddit"></i></li>
-                </ul>
+<html lang="en">
+​
+<head>
+    <title>Gift Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+​
+    <link rel="stylesheet" href="stylz.css">
+​
+​
+</head>
+​
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="giftsearchlogo.jpeg" alt="Gift Search Logo">
             </div>
-            
-            <div class="container">
-                <div class="d-inline p-2 bg-dark text-white">LATEST PICKS</div>
+            <div class="col">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">LATEST PICKS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">GIFTS BY OCCASION</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#" tabindex="1">TYPES OF GIFTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#" tabindex="2">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#" tabindex="3">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            
-            <nav class="navbar">
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">LATEST PICKS</a></li>
-                        <li><a href="#">GIFTS BY OCCASION</a></li>
-                        <li><a href="#">TYPES OF GIFTS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                            <div class="search">
-                                <form action="#">
-                                    <input type="text"
-                                        placeholder=" Search..."
-                                        name="search">
-                                    <button>
-                                        <i class="fa fa-search"
-                                            style="font-size: 18px;">
-                                        </i>
-                                    </button>
-                                </form>
-                            </div>
-                </div>
-            </nav>
-                   
-
-            <div class = "image">
-                ​<img src="" class="rounded mx-auto d-block" alt="">
-            </div>
-
-            <div class="image2">
-                <div class="select">
-                    I want to get a gift for
-                    <select name = "format" id="format"> 
-                    <option selected disabled>A MAN</option>
-                    <option value="">A FEMALE</option>
-                    <option value="">DOESN'T MATTER</option>
-                    </select>
-                     who is my
-                    <select name = "format" id="format">
-                    <option selected disabled>FAMILY MEMBER</option>
-                    <option value="">PARTNER</option>
-                    <option value="">FRIEND</option>
-                    <option value="">CO-WORKER</option>
-                    <option value="">ACQUAINTANCE</option>
-                    </select>
-                    They are
-                    <select name = "format" id="format">
-                    <option selected disabled>AN ADULT</option>
-                    <option value="">A CHILD</option>
-                    <option value="">A TEENAGER</option>
-                    <option value="">AN ADULT</option>
-                    </select> 
-                    and my budget is
-                    <select name = "format" id="format">
-                    <option selected disabled>UNDER $20</option>
-                    <option value="">UNDER $50</option>
-                    <option value="">UNDER $100</option>
-                    <option value="">INFINITE</option>
-                    </select> 
-                </div>
-    
-                <img src="" class="rounded mx-auto d-block" alt="">
-            </div>
-
-
-                <div class="button">
-                    <button type="button" class="btn btn-danger">WHAT TO GET?</button>
-                </div>
-
-                <div class="image3">
-                    <img src="" class="rounded mx-auto d-block" alt="">
-                </div>            
-            </div>
-            <div class="card" style="width:0px"></div>
-            <img class="card-img-top" src="t-shirt.jpg" alt="Card image" style="width:20%">
+        </div>
+​
+        <div class="upper-card text-center">
             <div class="card-body">
-                <h4 class="card-title">Sloth Loves Cat T-Shirt</h4>
-                <p class="card-text">Of course two of the cutest animals
-                <p class="card-text">on the planet must like each 
-                <p class="card-text">other and you can show their
-                <p class="card-text">love with this adorable T-shirt! Read more »</p>
-                <a href="#" class="btn btn-primary">CHECK IT OUT</a>
+                <h1 class="card-title-1">WHO DO YOU WANT TO</h1>
+                <h3 class="card-title-2">make happy?</h3>
             </div>
+        </div>
+​
+        <div class="card border-primary text-center">
+            <div class="card-body">
+                <div class="col-9 form-fields mx-auto">
+                    <div class="form-inline justify-content-center">
+                        <span class="p-1">I want to get a gift for</span>
+                        <select name="gender">
+                            <option value="1">A MALE</option>
+                            <option value="2">A FEMALE</option>
+                            <option value="3">DOESN'T MATTER</option>
+                        </select>
+                        <span class="p-1">who is my</span>
+                        <select name="relationship">
+                            <option value="1">Partner</option>
+                            <option value="2">Family Member</option>
+                            <option value="3">Friend</option>
+                            <option value="4">Co-Worker</option>
+                            <option value="5">Acquaintance</option>
 
-        
-
-
-
-    </body>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-inline justify-content-center">
+                        <span class="p-1">They are</span>
+                        <select name="age">
+                            <option value="1">A Child</option>
+                            <option value="2">A Teenager</option>
+                            <option value="3">An Adult</option>
+                        </select>
+                        <span class="p-1">and my budget is</span>
+                        <select name="budget">
+                            <option value="20">Under $20</option>
+                            <option value="50">Under $50</option>
+                            <option value="100">Under $100</option>
+                            <option value="0">Infinite</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="col-sm-12 button-row text-center">
+                        <button class="btn btn-danger btn-lg" type="submit">What to Get?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="sloth-loves-cat-t-shirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sloth Loves Cat T-Shirt</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>             
+               
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/men-s-traveler-dopkit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Men's Traveler Dopp Kit</h5>
+                      <p class="card-text">A compact high quality toiletry bag with handles and pockets, ready to be packed and thrown in the
+                        bag as you prepare to go on an adventure.</p>
+                        <div class="price px-4">
+                            <h5>$27.25</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/narwhal-usb-foot-warmers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Narwhal USB Foot Warmers</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/predator-quadcopter-drone.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Predator Quadcopter Drone</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/smart-led-light-bulb-smartphone-controlled.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Smart LED Light Bulb - Smartphone Controlled</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/cobblestone-pathway-glossy-mural-36x80in.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cobblestone Pathway Glossy Mural 36x80in</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/star-wars-han-solo-in-carbonite-wall-decal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Star Wars Han Solo In Carbonite Wall Decal</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>  
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/emoji-poop-shaped-pillow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Emoji Poop Shaped Pillow</h5>
+                      <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                      <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>
+            </div> 
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/galaxy-case-for-macbook-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxy Case for MacBook</h5>
+                        <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                        <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>
+            </div> 
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/boogie-board-8-5-inch-lcd-writing-tablet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boogie Board 8.5 Inch LCD Writing Tablet</h5>
+                        <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                        <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>   
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/ninjabread-men-cookie-cutters-set-of-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ninjabread Men Cookie Cutters (Set of 3)</h5>
+                        <p class="card-text">Of course two of the cutest animals on the planet must like each other and you can show their
+                        love with this adorable T-shirt!</p>
+                        <div class="price px-4">
+                            <h5>$17.95</h5>
+                        </div>
+                        <a href="#" class="btn btn-primary">Check It Out</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 result">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://giftsear.ch/image/square/happy-cat-pillowcase-18x18in.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Happy Cat Pillowcase 18x18in</h5>
+                        <p class="card-text">Printed with the most content kitty face you'll ever see, this pillowcase (probably being petted 
+                        out of shot) would lend you some of his happiness when wrappin</p>
+                        <div class="price px-4">
+                            <h5>$7.99</h5>
+                        </div>
+                        <a href="#" class="btn btn-primary">Check It Out</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>            
+        </div>
+    </div>
+</body>
+​
 </html>
